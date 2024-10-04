@@ -30,8 +30,10 @@ console.log(products[0].id);
 										/>
                                 </a>
                                 <div class="grid p-5">
-                                    <h5 transition:name={`text-${slug}`} class="mb-2 text-2xl font-bold tracking-tight text-white">{title}</h5>
-                                    <p class="mb-3 text-lg font-semibold text-gray-400">{description}</p>
+                                    <a href={`/producto/${slug}`}>
+                                        <h5 transition:name={`text-${slug}`} class="mb-2 text-2xl font-bold tracking-tight text-white">{title}</h5>
+                                    </a>
+                                    <a href={`/producto/${slug}`} class="mb-3 text-lg font-semibold text-gray-400">{description}</a>
                                     <p class="mb-3 text-md text-gray-400">Contenido: {content}</p>
                                     <div class="flex justify-center items-center gap-3">
                                         <a
