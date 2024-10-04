@@ -12,7 +12,7 @@ export async function getStaticPaths() {
 
 const { product } = Astro.props;
 const { data, slug } = product;
-const { title, img, content, description, buy } = data;
+const { title, img, content, buy } = data;
 
 //Variable to render the content in markdown
 const { Content } = await render(product);
