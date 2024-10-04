@@ -2,8 +2,6 @@ name: Deploy
 on:
   push:
     branches: master
-  pull_request:
-    branches: master
 
 jobs:
   deploy:
@@ -38,5 +36,5 @@ jobs:
         uses: denoland/deployctl@v1
         with:
           project: "mauro3001-naturist-st-56"
-          entrypoint: "dist/index.html"
+          entrypoint: "https://jsr.io/@std/http/1.0.7/file_server.ts"
           root: "dist"
