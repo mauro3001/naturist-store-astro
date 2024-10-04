@@ -37,6 +37,6 @@ jobs:
       - name: Upload to Deno Deploy
         uses: denoland/deployctl@v1
         with:
-          project: "naturist-store-astro"
-          entrypoint: "server/entry.mjs"
+          project: "mauro3001-naturist-st-56"
+          entrypoint: "dist/index.html"
           root: "dist"
